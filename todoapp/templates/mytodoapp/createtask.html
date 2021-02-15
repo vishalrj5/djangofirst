@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- CSS only -->
+<link rel="stylesheet" href="{%static 'css/styles.css'%}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+</head>
+<body>
+<form method="post" action="{% url 'add' %}">
+    {%csrf_token%}
+
+<!--    cross site request -->
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <label for=""><h2>TaskName</h2></label>
+            <input type="text" name="task">
+            <input type="submit" value="create"  name="">
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+</form>
+</body>
+</html>
