@@ -1,0 +1,16 @@
+h1{
+color: red;
+background-color: yellow;
+font-family: Serif;
+text-align: center;
+}
+input
+{
+font-width:10px;
+color: black;
+background-color: #85ffb6;
+text-align: center;
+}
+.container{
+background-color:#faeeed;
+}

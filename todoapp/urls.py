@@ -16,9 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import path
-from todoapp.views import create_task,addTask
+from todoapp.views import create_task,addTask,calc,ad,sub,mul
 
 urlpatterns = [
     path('create', create_task),
     path('add',addTask,name="add"),
+    path('calc',calc),
+    path('addition',ad,name='calc1'),
+    path('sub',sub,name='calc2'),
+    path('mul',mul,name="calc3"),
 ]

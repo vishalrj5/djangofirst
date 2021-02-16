@@ -21,11 +21,38 @@
         <div class="col-4">
             <label for=""><h2>TaskName</h2></label>
             <input type="text" name="task">
+            <br><br>
+            <label for=""><h2>Date</h2></label>
+            <input type="text" name="date">
+            <br><br>
+            <label for=""><h2>Status</h2></label>
+            <input type="text" name="status">
+
             <input type="submit" value="create"  name="">
+
         </div>
-        <div class="col-4"></div>
+        <div class="col-4">
+<!--            {{task}}-->
+
+        </div>
     </div>
 </div>
 </form>
+<table class="table">
+    <tr>
+        <td>ID</td>
+        <td>TASK</td>
+        <td>DATE</td>
+        <td>STATUS</td>
+    </tr>
+    {%for tas in task%}
+    <tr>
+        <td>{{tas.id}}</td>
+        <td>{{tas.task_name}}</td>
+        <td>{{tas.date}}</td>
+        <td>{{tas.status}}</td>
+    </tr>
+    {%endfor%}
+</table>
 </body>
 </html>

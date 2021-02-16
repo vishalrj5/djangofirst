@@ -14,6 +14,13 @@ class Tasks(models.Model):
 
     def __str__(self):
         return self.task_name
+class students(models.Model):
+    sname=models.CharField(max_length=100)
+    course=models.CharField(max_length=100)
+    total=models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.sname
 
 
 # ORM queries
